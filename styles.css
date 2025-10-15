@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+/* Reset default */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header{
   padding: 0;
   margin: 0;
