@@ -109,3 +109,73 @@ footer {
   font-size: 14px;
 }
 
+/* hamburger menu css and media queries*/
+/* Hide checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon styles */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-left: 15px;
+}
+
+/* --- Responsive styles --- */
+@media (max-width: 600px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide nav by default on mobile */
+  .navbar {
+    display: none;
+    width: 100%;
+    background-color: #081c35;
+  }
+
+  /* Show nav when checkbox is checked */
+  .menu-toggle:checked + .hamburger + .navbar {
+    display: block;
+  }
+
+  .nav--list {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav--list .item a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav--list .item:last-child a {
+    border-bottom: none;
+  }
+
+  /* Adjust logo for mobile */
+  header img#logoimg {
+    width: 45%;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 600px) {
+  .hamburger {
+    font-size: 30px;
+  }
+}
