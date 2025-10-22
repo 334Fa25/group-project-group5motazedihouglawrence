@@ -38,7 +38,7 @@ header img#logoimg {
 
 /*Navigation*/
 .navbar {
-  width: 120%;
+  width: 100%;
 }
 
 .nav--list {
@@ -52,10 +52,86 @@ header img#logoimg {
 .item a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 11px;
   color: #fff;
   letter-spacing: 1px;
 }
+
+/*Home Section: Quote*/
+.home-section {
+position: relative;
+width: 100%
+}
+
+.home-image {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.blue-box {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  background-color: #081C35;
+  color: #FFFAF5; 
+  padding: 30px;
+  max-width: 300px;
+  border-radius: 12px;
+  font-family: 'Gelasio', serif;
+}
+
+.blue-box h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #FFFAF5;
+}
+
+.blue-box p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #FFFAF5;
+}
+
+.quote-button {
+  background-color:#FFFAF5;
+  color: #081C35;
+  font-family: 'Gantari', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Home Section: Who Are We?*/
+.intro-whoarewe {
+  display: block;
+  background-color: #00916E;
+  color: #FFFAF5;
+  font-family: 'Gantari', sans-serif;
+  width: 100%;
+  padding: 50px 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.meetourteam-button {
+  background-color:#FFFAF5;
+  color: #081C35;
+  font-family: 'Gantari', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /*Footer Area*/
 footer {
   background-color: #081c35;
