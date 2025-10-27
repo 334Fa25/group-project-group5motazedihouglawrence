@@ -19,6 +19,10 @@ header {
   padding: 25px 0;
 }
 
+h1 {
+  font-family: Gantari;
+  }
+
 .header-content {
   display: flex;
   align-items: center;
@@ -115,7 +119,7 @@ display: block;
   font-family: 'Gantari', sans-serif;
   width: 100%;
   padding: 50px 30px;
-  justify-content: center;
+  text-align: center;
   align-items: center;
 }
 
@@ -126,12 +130,22 @@ display: block;
   font-weight: bold;
   font-size: 1rem;
   padding: 12px 20px;
+  margin-top: 12px;
   border-radius: 6px;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
 }
 
+/*Services*/
+.services {
+  background-color: #081C35;
+  color: #FFFAF5;
+  align-items: center;
+  text-align: center;
+  padding: 80px
+}
+  
 /*Footer Area*/
 footer {
   background-color: #081c35;
