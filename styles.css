@@ -181,6 +181,21 @@ display: block;
 }
 
 /*Home Section: Blogs & Tips*/
+.articles-wrap {
+  background-color: #00916E;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .article-card {
   flex: 1 1 300px;
     max-width: 350px; 
@@ -188,6 +203,7 @@ display: block;
     border-radius: 10px; 
     overflow: hidden;
 }
+
 
 
 /*Home Section: Services*/
