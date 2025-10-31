@@ -257,7 +257,72 @@ footer {
   margin-top: 20px;
 }
 
+/* ---------------------------------------------------------
+  Gallery Page
+--------------------------------------------------------- */
+.welcome-gallery {
+  background-color: #081c35;
+  color: #FFFAF5;
+  padding: 40px 10px;
+  text-align: center;
+  font-family: 'Gantari', sans-serif;
+}
 
+.quote-button {
+  background-color: #FFFAF5;
+  color: #081C35;
+  font-family: 'Gantari', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: auto;
+  padding: 20px;
+  object-fit: contain;
+  align-items: center;
+}
+
+/* ---------------------------------------------------------
+  About Us Page
+--------------------------------------------------------- */
+.services {
+  background-color: #081C35;
+  color: #FFFAF5;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+  font-family: 'Gelasio', serif;
+}
+
+.quotations {
+  text-align: center;
+  padding: 25px 15px;
+  background-color: #FFFAF5;
+  border-radius: 8px;
+  margin: 30px auto;
+}
+
+.team {
+  background-color: #00916E;
+  color: #FFFAF5;
+  padding: 40px 10px;
+  text-align: center;
+  font-family: 'Gantari', sans-serif;
+}
+
+/* Media Query for Mobile */
 @media (min-width: 600px) {
 
   .header-content {
@@ -315,7 +380,7 @@ footer {
   }
 }
 
-
+/* Media Query for Desktop */
 @media (min-width: 1024px) {
 
   header {
