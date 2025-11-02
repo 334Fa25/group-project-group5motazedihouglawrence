@@ -1,110 +1,159 @@
 @charset "utf-8";
 
-
-/* Reset + Base */
-body, h1, h2, h3, p, ul {
-  margin: 0;
-  padding: 0;
+/* ========================================
+   Reset + Base
+   ======================================== */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+href {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
-  font-family: 'Gantari', serif;
-  background-color: #FFFAF5;
+  font-family: "Gantari", serif;
+  background-color: #fffaf5;
   color: #081c35;
+  line-height: 1.6;
 }
 
-
-header {
-  background-color: #081c35;
-  padding: 20px;
-  text-align: center;
-}
-
+/* ========================================
+   Type
+   ======================================== */
 h1 {
-  font-family: Gelasio;
+  font-family: "Gelasio", serif;
   font-size: 1.8rem;
-  text-align: center;
-  color: #FFFAF5;
+  color: #fffaf5;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 h2 {
   margin-bottom: 20px;
-  color: #081C35;
+  color: #081c35;
+  font-family: "Gelasio", serif;
+  text-align: center;
+}
+
+/* ========================================
+   Layout: Header + Navigation
+   ======================================== */
+header {
+  background-color: #081c35;
+  padding: 10px;
+  position: relative;
+  z-index: 1000;
 }
 
 .header-content {
   display: flex;
-  flex-direction: column;
-}
-
-header img#logoimg {
-  width: 30%;
-  margin-bottom: 10px;
-}
-
-/* Nav */
-.navbar {
-  display: flex;
   align-items: center;
-  width: 100%;
-  background-color: #081c35;
+  justify-content: space-between;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo-link {
+  display: block;
+  flex-shrink: 0;
+}
+
+#logoimg {
+  width: 120px;
+  height: auto;
+}
+
+/*Hamburger*/
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #fffaf5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Navbar */
+.navbar {
+  flex-grow: 1;
 }
 
 .nav--list {
   display: flex;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
-  padding: 12px;
+  padding: 0;
+  gap: 8px;
 }
 
 .nav--list .item a {
   display: block;
-  padding: 10px;
+  padding: 10px 14px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 9px;
-  color: #fff;
-  transition: background 0.3s;
+  font-size: 13px;
+  color: #fffaf5;
+  border-radius: 4px;
+  transition: background 0.3s ease;
 }
 
 .nav--list .item a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #081c35;
+}
+/* ========================================
+   Main Sections
+   ======================================== */
+.head {
+  background-color: #081c35;
+  color: #fffaf5;
+  padding: 50px 30px;
+  text-align: center;
 }
 
-#menu-toggle {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-  font-size: 28px;
-  color: #fff;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-/* Main Page*/
-.home-section {
+.home {
   position: relative;
   width: 100%;
 }
 
 .home-image {
   width: 100%;
-  height: auto;
+  height: 80 px;
   display: block;
 }
 
+.home-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
 .blue-box {
-  background-color: #081C35;
-  color: #FFFAF5;
+  background-color: #081c35;
+  color: #fffaf5;
   padding: 20px;
   margin: 20px;
   border-radius: 12px;
-  font-family: 'Gelasio', serif;
+  font-family: "Gelasio", serif;
 }
 
 .blue-box h1 {
@@ -118,33 +167,34 @@ header img#logoimg {
 }
 
 .quote-button {
-  background-color: #FFFAF5;
-  color: #081C35;
-  font-family: 'Gantari', sans-serif;
+  background-color: #fffaf5;
+  color: #081c35;
+  font-family: "Gantari", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  padding: 10px 16px;
+  padding: 10px 18px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  box-shadow: 2px 2px 10px #081C35;
+  box-shadow: 2px 2px 10px #081c35;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px;
 }
 
-/* ---------------------------------------------------------
-   Who Are We
---------------------------------------------------------- */
+/* Who Are We */
 .intro-whoarewe {
-  background-color: #00916E;
-  color: #FFFAF5;
-  padding: 40px 10px;
+  background-color: #00916e;
+  color: #fffaf5;
+  padding: 40px 15px;
   text-align: center;
-  font-family: 'Gantari', sans-serif;
+  font-family: "Gantari", sans-serif;
 }
 
 .meetourteam-button {
-  background-color: #FFFAF5;
-  color: #081C35;
-  font-family: 'Gantari', sans-serif;
+  background-color: #fffaf5;
+  color: #081c35;
+  font-family: "Gantari", sans-serif;
   font-weight: bold;
   font-size: 1rem;
   padding: 10px 18px;
@@ -154,12 +204,11 @@ header img#logoimg {
   margin-top: 12px;
 }
 
-
 .intro-whychooseus {
-  background-color: #081C35;
-  color: #FFFAF5;
-  margin: 30px 10px;
-  padding: 20px;
+  background-color: #081c35;
+  color: #fffaf5;
+  margin: 30px 15px;
+  padding: 25px;
   border-radius: 12px;
   text-align: center;
 }
@@ -168,65 +217,106 @@ header img#logoimg {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 20px;
 }
 
+.whychooseus-container h2 {
+  color: #fffaf5;
+}
 .whychooseus-body {
-  background-color: #FFFAF5;
-  color: #081C35;
+  background-color: #fffaf5;
+  color: #081c35;
   padding: 20px;
   border-radius: 8px;
 }
 
-/* ---------------------------------------------------------
-   Blogs & Tips
---------------------------------------------------------- */
+.whychooseus-body h1 {
+  color: #081c35;
+}
+
+/* Blogs & Tips */
 .articles-wrap {
-  background-color: #DAEDBD;
-  padding: 30px 15px;
+  background-color: #daedbd;
+  padding: 40px 15px;
   text-align: center;
 }
 
 .articles {
   display: flex;
-  flex-direction: column;
   gap: 25px;
   overflow-x: auto;
+  padding: 10px 0;
 }
 
 .article-card {
-  background-color: #FFFAF5;
+  background-color: #fffaf5;
   border-radius: 10px;
   padding: 25px;
-  box-shadow: 5px 5px 5px #081C35;
+  box-shadow: 5px 5px 5px #081c35;
   flex: 0 0 90%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
+/* Services */
+/* --- Service Images --- */
 
+.service-body img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 30px
+}
+
+.service-body h2 {
+  background-color: #081c35; 
+  color: #fffaf5;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0 12px;
+}
+
+.service-body p {
+  color: #081c35;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px;
+}
+  
 .intro-ourservices {
   text-align: center;
-  padding: 25px 15px;
-  background-color: #FFFAF5;
+  padding: 30px 15px;
+  background-color: #fffaf5;
   border-radius: 8px;
   margin: 30px auto;
+  max-width: 1000px;
 }
 
 .service-row {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .service-item h3 {
-  margin-top: 30px;
+  margin-top: 15px;
+  font-size: 1.3rem;
 }
 
+.icon-png {
+  max-height: 100px;
+}
 
+/* Pricing */
 .pricing {
   margin: 30px auto;
-  padding: 20px;
-  background-color: #FFFAF5;
+  padding: 25px;
+  background-color: #fffaf5;
   border-radius: 12px;
+  max-width: 1000px;
 }
 
 .pricing-container {
@@ -236,158 +326,322 @@ header img#logoimg {
 }
 
 .pricing-section {
-  background-color: #FFFAF5;
-  border: 1px solid #e0e0e0;
+  background-color: #fffaf5;
+  border: 1px solid #daedbd;
   border-radius: 8px;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
+.pricing-section h2 {
+  background-color: #081c35;
+  color: #fffaf5;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-size: medium;
+}
+
+.price {
+  text-align: right;
+  color: #00916e;
+  margin-bottom: 20px;
+  font-size: 0.5 rem;
+}
+
+.plan {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #daedbd;
+}
+
+/* Footer */
 footer {
   background-color: #081c35;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
+  color: #fffaf5;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  flex: 0 0 120px;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .footer-columns {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-/* ---------------------------------------------------------
-  Gallery Page
---------------------------------------------------------- */
-.welcome-gallery {
-  background-color: #081c35;
-  color: #FFFAF5;
-  padding: 40px 10px;
-  text-align: center;
-  font-family: 'Gantari', sans-serif;
-}
-
-.quote-button {
-  background-color: #FFFAF5;
-  color: #081C35;
-  font-family: 'Gantari', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 12px;
-}
-
-.gallery-grid {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
+  justify-content: space-between;
 }
 
-.gallery-grid img {
-  width: auto;
-  padding: 20px;
-  object-fit: contain;
+.footer-column {
+  min-width: 0;
+}
+
+footer a,
+footer .footer-column a {
+  color: #fffaf5;
+  text-decoration: none;
+}
+footer a:hover,
+footer .footer-column a:hover {
+  color: #daedbd;
+  text-decoration: underline;
+}
+
+/* Gallery Page */
+.gallery {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fffaf5;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* ---------------------------------------------------------
-  About Us Page
---------------------------------------------------------- */
+.BeforeAfter,
+.house1,
+.house2,
+.patio,
+.House3,
+.redDoor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery p {
+  font-style: italic;
+  color: #081c35;
+  background-color: #ffffff;
+  border-left: 4px solid #081c35;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin: 20px auto 40px;
+  max-width: 800px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  line-height: 1.6;
+
+.gallery img {
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #081c35;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  max-width: 580px;
+}
+
+/* About Us Page */
 .services {
-  background-color: #081C35;
-  color: #FFFAF5;
-  padding: 20px;
-  margin: 20px;
+  background-color: #081c35;
+  color: #fffaf5;
+  padding: 25px;
+  margin: 20px 15px;
   border-radius: 12px;
-  font-family: 'Gelasio', serif;
+  font-family: "Gelasio", serif;
 }
 
 .quotations {
   text-align: center;
-  padding: 25px 15px;
-  background-color: #FFFAF5;
+  padding: 30px 15px;
+  background-color: #fffaf5;
   border-radius: 8px;
   margin: 30px auto;
+  max-width: 1000px;
+  border-bottom: 1px dashed #daedbd;
 }
 
 .team {
-  background-color: #00916E;
-  color: #FFFAF5;
-  padding: 40px 10px;
+  background-color: #00916e;
+  padding: 20px 20px;
   text-align: center;
-  font-family: 'Gantari', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
-/* Media Query for Mobile */
+.team h2 {
+  color: #fffaf5;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.team-photo {
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 30px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fffaf5;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  row-gap: 10px
+}
+
+.team-info {
+  margin-top: 20px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.team-name {
+  color: #081c35;
+  margin-bottom: 5px;
+}
+
+.team-title {
+  color: #2a9d8f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.team-desc {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ========================================
+ Mobile (767px)
+======================================== */
 @media (max-width: 767px) {
-  @media (max-width: 767px) {
-  header {
-    padding: 10px 15px;
-  }
-
-  .header-content {
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  #logoimg {
-    width: 120px;
-    margin-bottom: 10px;
-  }
-
-  /* Show hamburger */
+  /* Show Hamburger */
   .hamburger {
     display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    order: 2;
   }
 
-  /* Navbar hidden by default */
+  .logo-link {
+    order: 1;
+  }
+
+  /* Hide nav */
   .navbar {
+    order: 3;
     width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #081c35;
+    z-index: 999;
   }
 
   .nav--list {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #081c35;
-    text-align: center;
   }
 
   .nav--list .item a {
+    padding: 14px;
+    text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 12px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
-  /* When menu checkbox is checked — show nav */
-  #menu-toggle:checked + .hamburger + .navbar .nav--list {
+  .nav--list .item:last-child a {
+    border-bottom: none;
+  }
+
+  /* Show menu when checkbox checked */
+  .menu-toggle:checked ~ .navbar .nav--list {
     display: flex;
   }
 
-  /* Optional: rotate hamburger to X */
-  #menu-toggle:checked + .hamburger::before {
+  /* Hamburger to X */
+  .hamburger::before {
+    content: "☰";
+  }
+
+  .menu-toggle:checked ~ .hamburger::before {
     content: "✕";
+  }
+
+  /*Footer*/
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-content,
+  .footer-columns {
+    gap: 20px;
+  }
+  
+  .gallery-grid img {
+  max-width: 45%; 
   }
 }
 
-/* Media Query for Tablet */
-@media (max-width: 1023px) and (min-width: 768px) {
-  #logoimg {
-    width: 140px;
+/* ========================================
+  Tablet (768px to 1023px)
+======================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav--list {
+    justify-content: center;
+    gap: 12px;
   }
 
   .nav--list .item a {
-    padding: 12px 16px;
-    font-size: 13px;
+    font-size: 14px;
+    padding: 10px 16px;
   }
 
-  .container {
-    max-width: 900px;
+  #logoimg {
+    width: 140px;
   }
-  
+}
+
+/* ========================================
+   Desktop (1024px)
+======================================== */
+@media (min-width: 1024px) {
+  .header-content,
+  .intro-ourservices,
+  .pricing,
+  .footer-columns {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .article-card {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  .whychooseus-container,
+  .service-row,
+  .pricing-container {
+    flex-direction: row;
+  }
+
+  .whychooseus-body,
+  .service-item,
+  .pricing-section {
+    flex: 1;
+  }
+}

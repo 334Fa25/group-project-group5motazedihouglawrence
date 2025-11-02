@@ -13,38 +13,32 @@
 
   <body>
     <!--Head-->
-    <header class="main-logo">
-      <div class="container">
-        <div class="header-content">
-          <a href="index.html" class="logolink">
-            <img src="logo.png" alt="Bright Sprout Logo" id="logoimg" />
-          </a>
-
-          <!-- Hamburger Nav-->
-
-          <!-- Hamburger Button -->
-          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-          <label for="menu-toggle" class="hamburger">&#9776;</label>
-
-          <!-- Nav Bar -->
-          <nav class="navbar">
-            <ul class="nav--list">
-              <li class="item"><a href="index.html">Home</a></li>
-              <li class="item"><a href="contact.html">Contact Us</a></li>
-              <li class="item"><a href="about.html">About Us</a></li>
-              <li class="item"><a href="services.html">Services</a></li>
-              <li class="item"><a href="pricing.html">Pricing</a></li>
-              <li class="item"><a href="gallery.html">Gallery</a></li>
-              <li class="item"><a href="contact.html">Get a Free Quote!</a></li>
-            </ul>
-          </nav>
-        </div>
+    <header>
+      <div class="header-content">
+        <a href="index.html" class="logolink">
+          <img src="logo.png" alt="Bright Sprout Logo" id="logoimg" />
+        </a>
+        <!--Hamburger-->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger"></label>
+        <!--Nav Bar-->
+        <nav class="navbar">
+          <ul class="nav--list">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+            <li class="item"><a href="about.html">About Us</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="pricing.html">Pricing</a></li>
+            <li class="item"><a href="gallery.html">Gallery</a></li>
+            <li class="item"><a href="contact.html">Get a Free Quote!</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <!--Introduction-->
     <section class="home">
-      <div class="home-section">
+      <div class="home-wrapper">
         <img src="images/reddoorhouseafter.png" alt="redDoorHouse" class="home-image" />
         <div class="blue-box">
           <h1>Nursing Your Part of the Earth</h1>
@@ -81,7 +75,7 @@
     </section>
 
     <section class="intro-ourservices">
-      <h1>Our Services</h1>
+      <h2>Our Services</h2>
       <div class="service-row">
         <div class="service-item">
           <div class="service-icon">
@@ -116,7 +110,7 @@
 
     <!--Reviews-->
     <div class="intro-reviews">
-      <h1>Hear from our valueable customers!</h1>
+      <h2>Hear from our valueable customers!</h2>
       <div class="quotations">
         <p>
           "BrightSprout gave our front yard a whole new look with plants that don’t need much water. It’s easy to take
@@ -230,46 +224,46 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
+<footer>
+  <div class="container">
+    <div class="footer-content">
 
-                <div class="footer-logo">
-                    <a href="index.html">
-                        <img src="logo.png" alt="Bright Sprout Logo" />
-                    </a>
-                </div>
+      <!-- LOGO – hidden on mobile -->
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="logo.png" alt="Bright Sprout Logo" />
+        </a>
+      </div>
 
-                <div class="footer-columns">
-                    <div class="footer-column">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#services-gardendesign">Garden Design</a></li>
-                            <li><a href="#services-lawninstallationmaintenance">Lawn Installation & Maintenance</a></li>
-                            <li><a href="#services-ecoirrigationsystem">Eco-Irrigation Systems</a></li>
-                            <li><a href="#services-seasonalcleanup">Seasonal Clean-up</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h3>Service Area</h3>
-                        <ul>
-                            <li><span>Maryville, MO.</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h3>Contact</h3>
-                        <ul>
-                            <li><span>Phone: (555) 123-LAND</span></li>
-                            <li><span>Email: info@brightsprout.com</span></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services-gardendesign">Garden Design</a></li>
+            <li><a href="#services-lawninstallationmaintenance">Lawn Installation & Maintenance</a></li>
+            <li><a href="#services-ecoirrigationsystem">Eco-Irrigation Systems</a></li>
+            <li><a href="#services-seasonalcleanup">Seasonal Clean-up</a></li>
+          </ul>
         </div>
-    </footer>
-</body>
 
+        <div class="footer-column">
+          <h3>Service Area</h3>
+          <ul>
+            <li><span>Maryville, MO.</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+            <li><span>Phone: (555) 123-LAND</span></li>
+            <li><span>Email: info@brightsprout.com</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+  </body>
 </html>
