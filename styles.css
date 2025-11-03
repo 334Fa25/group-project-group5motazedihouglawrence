@@ -1,8 +1,6 @@
 @charset "utf-8";
 
-/* ========================================
-   Reset + Base
-   ======================================== */
+/*------ Reset + Base ------*/
 *,
 *::before,
 *::after {
@@ -29,9 +27,7 @@ body {
   line-height: 1.6;
 }
 
-/* ========================================
-   Type
-   ======================================== */
+/*------ Type ------*/
 h1 {
   font-family: "Gelasio", serif;
   font-size: 1.8rem;
@@ -47,9 +43,7 @@ h2 {
   text-align: center;
 }
 
-/* ========================================
-   Layout: Header + Navigation
-   ======================================== */
+/*------ Layout: Header + Navigation --------*/
 header {
   background-color: #081c35;
   padding: 10px;
@@ -121,9 +115,8 @@ header {
 .nav--list .item a:hover {
   background-color: #081c35;
 }
-/* ========================================
-   Main Sections
-   ======================================== */
+
+/*-----Main-----*/
 .head {
   background-color: #081c35;
   color: #fffaf5;
@@ -234,7 +227,7 @@ header {
   color: #081c35;
 }
 
-/* Blogs & Tips */
+/*------ Blogs & Tips -----*/
 .articles-wrap {
   background-color: #daedbd;
   padding: 40px 15px;
@@ -258,16 +251,17 @@ header {
   margin: 0 auto;
 }
 
-/* Services */
-/* --- Service Images --- */
+/*------Services------*/
+/*--- Service Images ---*/
 
 .service-body img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
   margin-bottom: 15px;
   margin-top: 20px;
-  padding: 30px
+  padding: 30px;
+  align-content: center;
+  border-radius: 90px;
 }
 
 .service-body h2 {
@@ -280,10 +274,11 @@ header {
 
 .service-body p {
   color: #081c35;
-  font-size: 20px;
+  font-size: 25px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 15px;
+  padding: 20px;
 }
   
 .intro-ourservices {
@@ -310,7 +305,7 @@ header {
   max-height: 100px;
 }
 
-/* Pricing */
+/*------Pricing------*/
 .pricing {
   margin: 30px auto;
   padding: 25px;
@@ -525,9 +520,7 @@ footer .footer-column a:hover {
   line-height: 1.5;
 }
 
-/* ========================================
- Mobile (767px)
-======================================== */
+/*------------------ Mobile (767px) -------------------------------*/
 @media (max-width: 767px) {
   /* Show Hamburger */
   .hamburger {
@@ -539,7 +532,7 @@ footer .footer-column a:hover {
     order: 1;
   }
 
-  /* Hide nav */
+  /* --------Hide nav----- */
   .navbar {
     order: 3;
     width: 100%;
@@ -566,13 +559,13 @@ footer .footer-column a:hover {
   .nav--list .item:last-child a {
     border-bottom: none;
   }
-
-  /* Show menu when checkbox checked */
+  
+/*---------Hamburger Menu---------------*/
   .menu-toggle:checked ~ .navbar .nav--list {
     display: flex;
   }
-
-  /* Hamburger to X */
+  
+  
   .hamburger::before {
     content: "☰";
   }
@@ -596,9 +589,7 @@ footer .footer-column a:hover {
   }
 }
 
-/* ========================================
-  Tablet (768px to 1023px)
-======================================== */
+/*------------Tablet (768px to 1023px)-------*/
 @media (min-width: 768px) and (max-width: 1023px) {
   .nav--list {
     justify-content: center;
@@ -615,9 +606,7 @@ footer .footer-column a:hover {
   }
 }
 
-/* ========================================
-   Desktop (1024px)
-======================================== */
+/*--------------Desktop (1024px)---------------*/
 @media (min-width: 1024px) {
   .header-content,
   .intro-ourservices,
