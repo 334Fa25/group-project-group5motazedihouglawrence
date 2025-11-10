@@ -320,6 +320,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin: 30px 50px;
 }
 
 .pricing-section {
@@ -620,6 +621,12 @@ footer .footer-column a:hover {
 /*--------------Desktop (1024px)---------------*/
 @media (min-width: 1024px) {
 
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: larger;
+    }
     .header-content,
     .intro-ourservices,
     .pricing,
