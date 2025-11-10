@@ -166,13 +166,14 @@ header {
     font-weight: bold;
     font-size: 1rem;
     padding: 10px 18px;
-    border: none;
     border-radius: 6px;
     cursor: pointer;
     box-shadow: 2px 2px 10px #081c35;
     text-decoration: none;
-    display: inline-block;
     margin: 20px;
+    width: fit-content;
+    align-content: center;
+    max-width: 100%;
 }
 
 /* Who Are We */

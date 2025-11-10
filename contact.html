@@ -1,182 +1,209 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us | Bright Sprout Landscaping</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us | Bright Sprout Landscaping</title>
+        <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Gantari&display=swap" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Gantari&display=swap" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
 
-    <link href="styles.css" rel="stylesheet" />
-</head>
+    <body>
+        <!--Head-->
+        <header>
+            <div class="header-content">
+                <a href="contact.html" class="logolink">
+                    <img src="logo.png" alt="Bright Sprout Logo with Sprout" id="logoimg"/>
+                </a>
+                <!--Hamburger-->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                <label for="menu-toggle" class="hamburger" aria-label="Hamburger Menu for Mobile"></label>
+                <!--Nav Bar-->
+                <nav class="navbar">
+                    <ul class="nav--list">
+                        <li class="item"><a href="index.html">Home</a></li>
+                        <li class="item"><a href="contact.html">Contact Us</a></li>
+                        <li class="item"><a href="about.html">About Us</a></li>
+                        <li class="item"><a href="services.html">Services</a></li>
+                        <li class="item"><a href="pricing.html">Pricing</a></li>
+                        <li class="item"><a href="gallery.html">Gallery</a></li>
+                        <li class="item"><a href="contact.html">Get a Free Quote!</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<body>
-    <!--Head-->
-    <header>
-        <div class="header-content">
-            <a href="contact.html" class="logolink">
-                <img src="logo.png" alt="Bright Sprout Logo" id="logoimg" />
-            </a>
-            <!--Hamburger-->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-            <label for="menu-toggle" class="hamburger" aria-label="Open navigation menu"></label>
-            <!--Nav Bar-->
-            <nav class="navbar">
-                <ul class="nav--list">
-                    <li class="item"><a href="index.html">Home</a></li>
-                    <li class="item"><a href="contact.html">Contact Us</a></li>
-                    <li class="item"><a href="about.html">About Us</a></li>
-                    <li class="item"><a href="services.html">Services</a></li>
-                    <li class="item"><a href="pricing.html">Pricing</a></li>
-                    <li class="item"><a href="gallery.html">Gallery</a></li>
-                    <li class="item"><a href="contact.html">Get a Free Quote!</a></li>
-                </ul>
-            </nav>
+        <!-- Contact Header Section -->
+        <div class="head">
+            <h1>Contact Us</h1>
         </div>
-    </header>
+        <section id="contactHeader" class="intro-ourservices">
+            <div class="container">
+                <h2>
+                    We'd love to hear from you! Whether you're interested in a free quote, have questions about our
+                    services, or want to discuss a custom landscaping project, our team is here to help.
+                </h2>
+            </div>
+        </section>
 
-    <!-- Contact Header Section -->
-    <div class="head">
-        <h1>Contact Us</h1>
-    </div>
-    <section id="contactHeader" class="intro-ourservices">
-        <div class="container">
-            <h2>
-                We'd love to hear from you! Whether you're interested in a free quote, have questions about our services, or
-                want to discuss a custom landscaping project, our team is here to help.
-            </h2>
-        </div>
-    </section>
+        <!-- Contact Info -->
+        <section id="contactInfo" class="intro-whoarewe">
+            <div class="container">
+                <h3>Phone: (555) 555-5555</h3>
+                <h3>Email: info@brightsprout.com</h3>
+            </div>
+        </section>
 
-    <!-- Contact Info -->
-    <section id="contactInfo" class="intro-whoarewe">
-        <div class="container">
-            <h3>Phone: (555) 555-5555</h3>
-            <h3>Email: info@brightsprout.com</h3>
-        </div>
-    </section>
+        <!-- Contact Form -->
+        <section id="contactFormSection">
+            <div class="container">
+                <form id="contactForm" action="#" method="post">
+                    <fieldset id="custInfo">
+                        <legend>Contact Information</legend>
 
-    <!-- Contact Form -->
-    <section id="contactFormSection">
-        <div class="container">
-            <form id="contactForm" action="#" method="post">
-                <fieldset id="custInfo">
-                    <legend>Contact Information</legend>
-
-                    <div class="formRow">
-                        <label for="name">Name*</label>
-                        <input id="name" name="name" type="text" placeholder="First and Last Name" required />
-                    </div>
-
-                    <div class="formRow">
-                        <label for="street">Street Address</label>
-                        <input id="street" name="street" type="text" />
-                    </div>
-
-                    <div class="formRow">
-                        <label for="city">City</label>
-                        <input id="city" name="city" type="text" />
-                    </div>
-
-                    <div class="formRow">
-                        <label for="state">State</label>
-                        <input id="state" name="state" type="text" />
-                    </div>
-
-                    <div class="formRow">
-                        <label for="zip">Postal Code</label>
-                        <input id="zip" name="zip" type="text" pattern="^\d{5}(-\d{4})?$" placeholder="e.g. 12345 or 12345-6789" />
-                    </div>
-
-                    <div class="formRow">
-                        <label for="phone">Phone Number</label>
-                        <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" pattern="[0-9]{10}" />
-                    </div>
-
-                    <div class="formRow">
-                        <label for="email">Email*</label>
-                        <input id="email" name="email" type="email" placeholder="you@example.com" required />
-                    </div>
-
-                    <div class="formRow">
-                        <label for="date">Preferred Date of Service</label>
-                        <input id="date" name="serviceDate" type="date" />
-                    </div>
-
-                    <div class="formRow">
-                        <label>Services (Select all that apply)</label>
-                        <div class="checkbox-group">
-                            <label><input type="checkbox" name="services[]" value="lawn_mowing" /> Lawn Mowing</label><br />
-                            <label><input type="checkbox" name="services[]" value="landscaping" /> Landscaping</label><br />
-                            <label><input type="checkbox" name="services[]" value="tree_trimming" /> Tree Trimming</label><br />
-                            <label><input type="checkbox" name="services[]" value="mulching" /> Mulching</label><br />
-                            <label><input type="checkbox" name="services[]" value="seasonal_cleanup" /> Seasonal Clean-Up</label>
+                        <div class="formRow">
+                            <label for="name">Name*</label>
+                            <input id="name" name="name" type="text" placeholder="First and Last Name" required />
                         </div>
+
+                        <div class="formRow">
+                            <label for="street">Street Address</label>
+                            <input id="street" name="street" type="text" />
+                        </div>
+
+                        <div class="formRow">
+                            <label for="city">City</label>
+                            <input id="city" name="city" type="text" />
+                        </div>
+
+                        <div class="formRow">
+                            <label for="state">State</label>
+                            <input id="state" name="state" type="text" />
+                        </div>
+
+                        <div class="formRow">
+                            <label for="zip">Postal Code</label>
+                            <input
+                                id="zip"
+                                name="zip"
+                                type="text"
+                                pattern="^\d{5}(-\d{4})?$"
+                                placeholder="e.g. 12345 or 12345-6789" />
+                        </div>
+
+                        <div class="formRow">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                id="phone"
+                                name="phone"
+                                type="tel"
+                                placeholder="(555) 555-5555"
+                                pattern="[0-9]{10}" />
+                        </div>
+
+                        <div class="formRow">
+                            <label for="email">Email*</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                        </div>
+
+                        <div class="formRow">
+                            <label for="date">Preferred Date of Service</label>
+                            <input id="date" name="serviceDate" type="date" />
+                        </div>
+
+                        <div class="formRow">
+                            <label>Services (Select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label
+                                    ><input type="checkbox" name="services[]" value="lawn_mowing" /> Lawn Mowing</label
+                                ><br />
+                                <label
+                                    ><input type="checkbox" name="services[]" value="landscaping" /> Landscaping</label
+                                ><br />
+                                <label
+                                    ><input type="checkbox" name="services[]" value="tree_trimming" /> Tree
+                                    Trimming</label
+                                ><br />
+                                <label><input type="checkbox" name="services[]" value="mulching" /> Mulching</label
+                                ><br />
+                                <label
+                                    ><input type="checkbox" name="services[]" value="seasonal_cleanup" /> Seasonal
+                                    Clean-Up</label
+                                >
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <label for="help">How can we help?</label>
+                            <textarea
+                                id="help"
+                                name="help"
+                                rows="5"
+                                placeholder="Tell us about your project or request..."></textarea>
+                        </div>
+
+                        <div class="formRow">
+                            <p class="privacy-policy">
+                                <strong>Privacy Policy:</strong><br />
+                                By providing your phone number, you agree to receive text messages (SMS) from Thomas'
+                                Lawn Care. You can unsubscribe at any time by replying STOP. Message and data rates may
+                                apply. Message frequency varies. See our Privacy Policy for more details.
+                            </p>
+                        </div>
+
+                        <div id="buttons">
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="logo.png" alt="Bright Sprout Logo" />
+                        </a>
                     </div>
 
-                    <div class="formRow">
-                        <label for="help">How can we help?</label>
-                        <textarea id="help" name="help" rows="5" placeholder="Tell us about your project or request..."></textarea>
-                    </div>
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="services.html#gardendesign">Garden Design</a></li>
+                                <li>
+                                    <a href="services.html#lawninstallationandmaintenance"
+                                        >Lawn Installation & Maintenance</a
+                                    >
+                                </li>
+                                <li><a href="services.html#eco-irrigationsystems">Eco-Irrigation Systems</a></li>
+                                <li><a href="services.html#seasonalclean-up">Seasonal Clean-up</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="formRow">
-                        <p class="privacy-policy">
-                            <strong>Privacy Policy:</strong><br />
-                            By providing your phone number, you agree to receive text messages (SMS) from Thomas' Lawn Care. You can
-                            unsubscribe at any time by replying STOP. Message and data rates may apply. Message frequency varies.
-                            See our Privacy Policy for more details.
-                        </p>
-                    </div>
+                        <div class="footer-column">
+                            <h3>Service Area</h3>
+                            <ul>
+                                <li><span>Maryville, MO.</span></li>
+                            </ul>
+                        </div>
 
-                    <div id="buttons">
-                        <input type="submit" value="Submit" />
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="index.html">
-                        <img src="logo.png" alt="Bright Sprout Logo" />
-                    </a>
-                </div>
-
-                <div class="footer-columns">
-                    <div class="footer-column">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#services-gardendesign">Garden Design</a></li>
-                            <li><a href="#services-lawninstallationmaintenance">Lawn Installation & Maintenance</a></li>
-                            <li><a href="#services-ecoirrigationsystem">Eco-Irrigation Systems</a></li>
-                            <li><a href="#services-seasonalcleanup">Seasonal Clean-up</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h3>Service Area</h3>
-                        <ul>
-                            <li><span>Maryville, MO.</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h3>Contact</h3>
-                        <ul>
-                            <li><span>Phone: (555) 123-LAND</span></li>
-                            <li><span>Email: info@brightsprout.com</span></li>
-                        </ul>
+                        <div class="footer-column">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><span>Phone: (555) 123-LAND</span></li>
+                                <li><span>Email: info@brightsprout.com</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>
