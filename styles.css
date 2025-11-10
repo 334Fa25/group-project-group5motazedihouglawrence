@@ -645,4 +645,20 @@ footer .footer-column a:hover {
     .pricing-section {
         flex: 1;
     }
+    
+    /* side wide accessibility styles --- */
+:focus {
+  outline: 3px solid #00916e;
+  outline-offset: 2px;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #00916e;
+  outline-offset: 2px;
+}
+
 }

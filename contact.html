@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Contact BrightSprout Landscaping for a free quote on eco-friendly garden design, lawn care, and irrigation in Maryville, MO." />
         <title>Contact Us | Bright Sprout Landscaping</title>
 
         <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet" />
@@ -19,7 +20,14 @@
                     <img src="logo.png" alt="Bright Sprout Logo with Sprout" id="logoimg"/>
                 </a>
                 <!--Hamburger-->
-                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                 <input 
+  type="checkbox" 
+  id="menu-toggle"
+  class="menu-toggle"
+  aria-label="Menu"
+  aria-controls="main-navigation"
+  aria-expanded="false"
+/>
                 <label for="menu-toggle" class="hamburger" aria-label="Hamburger Menu for Mobile"></label>
                 <!--Nav Bar-->
                 <nav class="navbar">
@@ -96,8 +104,12 @@
 
                         <div class="formRow">
                             <label for="phone">Phone Number</label>
+                            <label for="phone">Phone Number</label>
+                                <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" aria-describedby="phoneHelp" />
+                                <small id="phoneHelp">Enter 10 digits, numbers only, or use format (555) 555-5555.</small>
+
                             <input
-                                id="phone"
+                                
                                 name="phone"
                                 type="tel"
                                 placeholder="(555) 555-5555"
