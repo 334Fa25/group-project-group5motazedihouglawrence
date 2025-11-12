@@ -258,12 +258,13 @@ header {
 
 .service-body img {
     width: 100%;
+    max-width: 580px;
     height: auto;
     margin-bottom: 15px;
     margin-top: 20px;
     padding: 30px;
-    align-content: center;
     border-radius: 90px;
+    box-shadow: 0 5px 5px #081c35;
 }
 
 .service-body h2 {
