@@ -535,6 +535,23 @@ footer .footer-column a:hover {
 /*------------------ Mobile (767px) -------------------------------*/
 @media (max-width: 767px) {
 
+  .team-member {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-info {
+    margin-top: 15px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .team-photo {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
     /* Show Hamburger */
     .hamburger {
         display: block;
@@ -600,7 +617,7 @@ footer .footer-column a:hover {
     .gallery-grid img {
         max-width: 45%;
     }
-}
+
 
 /*------------Tablet (768px to 1023px)-------*/
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -617,6 +634,7 @@ footer .footer-column a:hover {
     #logoimg {
         width: 140px;
     }
+}
 }
 
 /*--------------Desktop (1024px)---------------*/
