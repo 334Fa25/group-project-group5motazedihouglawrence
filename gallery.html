@@ -18,21 +18,25 @@
         <!--Head-->
         <header>
             <div class="header-content">
-                <a href="gallery.html" class="logolink">
+                <a href="index.html" class="logolink">
                     <img src="logo.png" alt="Bright Sprout Logo with Sprout" id="logoimg"/>
                 </a>
+
                 <!--Hamburger-->
-                 <input 
-  type="checkbox" 
-  id="menu-toggle"
-  class="menu-toggle"
-  aria-label="Menu"
-  aria-controls="main-navigation"
-  aria-expanded="false"
+                <input 
+    type="checkbox"
+    id="menu-toggle"
+    class="menu-toggle"
+    aria-label="Toggle navigation menu"
+    aria-controls="main-navigation"
+    role="switch"
+    aria-checked="false"
 />
+
                 <label for="menu-toggle" class="hamburger" aria-label="Hamburger Menu for Mobile"></label>
+
                 <!--Nav Bar-->
-                <nav class="navbar">
+                <nav class="navbar" id="main-navigation">
                     <ul class="nav--list">
                         <li class="item"><a href="index.html">Home</a></li>
                         <li class="item"><a href="contact.html">Contact Us</a></li>
@@ -55,13 +59,14 @@
         <div class="gallery">
             <!--1-->
             <div class="BeforeAfter">
-                <a href="services.html"
-                    ><img
+                <a href="services.html">
+                    <img
                         src="images/beforeandafter.jpg"
                         alt="Before and After of a backyard with garden design"
                         width="612"
                         height="386"
-                /></a>
+                    />
+                </a>
             </div>
             <p>
                 The image above is an example of a Before and After of Bright Sprout's Garden Design and Lawn
@@ -74,18 +79,19 @@
 
             <!--2-->
             <div class="house1">
-                <a href="services.html"
-                    ><img src="images/house1.jpg" alt="House 1 After with Landscaping" width="579" height="386"
-                /></a>
+                <a href="services.html">
+                    <img src="images/house1.jpg" alt="House 1 After with Landscaping" width="579" height="386" />
+                </a>
             </div>
             <div class="house2">
-                <a href="services.html"
-                    ><img
+                <a href="services.html">
+                    <img
                         src="images/house2.jpg"
                         alt="House 2 After with Landscaping and Irrigation"
                         width="562"
                         height="386"
-                /></a>
+                    />
+                </a>
             </div>
             <p>
                 The image above is an example of Bright Sprout's Eco-Irrigation System. This photo shows the service of
@@ -98,13 +104,14 @@
 
             <!--3-->
             <div class="patio">
-                <a href="services.html"
-                    ><img
+                <a href="services.html">
+                    <img
                         src="images/patio.jpg"
                         alt="Patio after with Landscaping and Seasonal Cleanup"
                         width="582"
                         height="386"
-                /></a>
+                    />
+                </a>
             </div>
             <p>
                 The image above is an example of Bright Sprout's Eco-Irrigation System on a back patio. This photo shows
@@ -112,104 +119,4 @@
             </p>
             <p>
                 "Jamie and the team made our backyard into a relaxing space with flowers, paths, and even a rainwater
-                system. You can tell they really care about what they do." – Sophia & Daniel K.
-            </p>
-
-            <!--4-->
-            <div class="House3">
-                <a href="services.html"
-                    ><img src="images/house3before.jpg" alt="House 3 Before Landscaping" width="583" height="386"
-                /></a>
-            </div>
-            <div class="House3">
-                <a href="services.html"
-                    ><img
-                        src="images/house3after.png"
-                        alt="House 3 After with beautiful green landscaping"
-                        width="579"
-                        height="386"
-                /></a>
-            </div>
-            <p>
-                The image above is an example of Bright Sprout's Garden Design. This photo shows the service of a Sprout
-                Plan.
-            </p>
-            <p>
-                "Bright Sprout gave our front yard a whole new look with plants that don’t need much water. It’s easy to
-                take care of, looks great, and even our neighbors noticed." – Laura P.
-            </p>
-
-            <!--5-->
-            <div class="redDoor">
-                <a href="services.html"
-                    ><img
-                        src="images/reddoorhouse.jpg"
-                        alt="Red Door House Before Yard Cleanup"
-                        width="581"
-                        height="386"
-                /></a>
-            </div>
-            <div class="redDoor">
-                <a href="services.html"
-                    ><img
-                        src="images/reddoorhouseafterfull.png"
-                        alt="Red Door After Yard Cleanup"
-                        width="579"
-                        height="386"
-                /></a>
-            </div>
-            <p>
-                The image above is an example of Bright Sprout's Seasonal Clean Up & Care. This photo shows the service
-                of a Fall Ready.
-            </p>
-            <p>
-                "Fall cleanup used to take us forever, but Bright Sprout handled it in no time. They cleared the leaves,
-                mulched, and got everything ready for winter. Huge help." – Matt B.
-            </p>
-        </div>
-
-        <!--Footer-->
-        <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <a href="index.html">
-                            <img src="logo.png" alt="Bright Sprout Logo" />
-                        </a>
-                    </div>
-
-                    <div class="footer-columns">
-                        <div class="footer-column">
-                            <h3>Services</h3>
-                            <ul>
-                                <li><a href="services.html#gardendesign">Garden Design</a></li>
-                                <li>
-                                    <a href="services.html#lawninstallationandmaintenance"
-                                        >Lawn Installation & Maintenance</a
-                                    >
-                                </li>
-                                <li><a href="services.html#eco-irrigationsystems">Eco-Irrigation Systems</a></li>
-                                <li><a href="services.html#seasonalclean-up">Seasonal Clean-up</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-column">
-                            <h3>Service Area</h3>
-                            <ul>
-                                <li><span>Maryville, MO.</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-column">
-                            <h3>Contact</h3>
-                            <ul>
-                                <li><span>Phone: (555) 123-LAND</span></li>
-                                <li><span>Email: info@brightsprout.com</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
-</html>
+                system. Y

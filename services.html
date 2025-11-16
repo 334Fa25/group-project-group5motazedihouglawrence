@@ -6,34 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Landscaping Services | Bright Sprout Landscaping</title>
     <meta 
-          name="description"
-          content="Bright Sprout Landscaping offers eco-friendly garden design, lawn maintenance, and smart irrigation systems services in Maryville, MO."/>
-    
+        name="description"
+        content="Bright Sprout Landscaping offers eco-friendly garden design, lawn maintenance, and smart irrigation systems services in Maryville, MO."
+    />
+
     <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Gantari&display=swap" rel="stylesheet"/>
-
     <link href="styles.css" rel="stylesheet"/>
 </head>
 
 <body>
-    <!--Head-->
+    <!--Header-->
     <header>
         <div class="header-content">
-        <a href="services.html" class="logolink">
+            <a href="index.html" class="logolink">
                 <img src="logo.png" alt="Bright Sprout Logo with Sprout" id="logoimg"/>
             </a>
+
             <!--Hamburger-->
-             <input 
-  type="checkbox" 
-  id="menu-toggle"
-  class="menu-toggle"
-  aria-label="Menu"
-  aria-controls="main-navigation"
-  aria-expanded="false"
+            <input 
+    type="checkbox"
+    id="menu-toggle"
+    class="menu-toggle"
+    aria-label="Toggle navigation menu"
+    aria-controls="main-navigation"
+    role="switch"
+    aria-checked="false"
 />
+
             <label for="menu-toggle" class="hamburger" aria-label="Hamburger Menu for Mobile"></label>
+
             <!--Nav Bar-->
-            <nav class="navbar">
+            <nav class="navbar" id="main-navigation">
                 <ul class="nav--list">
                     <li class="item"><a href="index.html">Home</a></li>
                     <li class="item"><a href="contact.html">Contact Us</a></li>
@@ -46,50 +50,61 @@
             </nav>
         </div>
     </header>
-    <!--Services-->
+
+    <!--Services Header-->
     <section class="head">
         <h1>Landscaping Services</h1>
     </section>
 
+    <!--Services Content-->
     <section class="services-container">
-        <div class="service-body">
-            <img src="images/beforeandafter.jpg" id="services-gardendesign" 
-                 alt="Before and After of Client 1 Backyard with Designed Garden" 
-                 width="300" 
-                 height="200">
+
+        <div class="service-body" id="gardendesign">
+            <img 
+                src="images/beforeandafter.jpg"
+                alt="Before and After of Client 1 Backyard with Designed Garden"
+                width="300"
+                height="200"
+            >
             <h2>Garden Design</h2>
             <p>Our Garden Design service focuses on creating thoughtful layout plans that ensure long-term beauty and sustainability. 
                 We specialize in using native, low-water, and drought-tolerant plants to minimize maintenance. 
                 Every project begins with a personal design consultation and can include the creation of dedicated pollinator gardens to boost local biodiversity.</p>
         </div>
 
-        <div class="service-body">
-            <img src="images/house2.jpg" id="services-pic" 
-                 alt="After of House 2 with full Maintenance" 
-                 width="300" 
-                 height="200">
+        <div class="service-body" id="lawninstallationandmaintenance">
+            <img 
+                src="images/house2.jpg"
+                alt="After of House 2 with full Maintenance"
+                width="300"
+                height="200"
+            >
             <h2>Lawn Installation & Maintenance</h2>
             <p>Achieve a perfect lawn with our Eco-conscious turf and ongoing care plans. 
                 Our full-service Lawn Maintenance includes professional mowing, scheduled aeration, and targeted weed control. 
                 We exclusively use organic treatments and fertilization programs to nourish your turf naturally and safely.</p>
         </div>
 
-        <div class="service-body">
-            <img src="images/house3after.png" id="services-ecoirrigationsystem" 
-                 alt="After of House 3 with full irrigation and landscape" 
-                 width="300" 
-                 height="200">
+        <div class="service-body" id="eco-irrigationsystems">
+            <img 
+                src="images/house3after.png"
+                alt="After of House 3 with full irrigation and landscape"
+                width="300"
+                height="200"
+            >
             <h2>Eco-Irrigation Systems</h2>
             <p>We install modern Eco-Irrigation Systems designed for maximum water conservation. 
                 Our solutions include state-of-the-art smart drip systems and customized rainwater harvesting setup to drastically reduce your overall water usage. 
                 We handle the entire system installation process and offer full-service repairs to keep your landscape efficient and water-saving.</p>
         </div>
 
-        <div class="service-body">
-            <img src="images/patio.jpg" id="services-seasonalcleanup" 
-                 alt="After of completed patio 1 clean up" 
-                 width="300" 
-                 height="200">
+        <div class="service-body" id="seasonalcleanup">
+            <img 
+                src="images/patio.jpg"
+                alt="After of completed patio 1 clean up"
+                width="300"
+                height="200"
+            >
             <h2>Seasonal Clean-Up</h2>
             <p>Prepare your landscape for changing weather with our comprehensive Seasonal Clean-Up services. 
                 We offer full-service yard preparation and debris removal to simplify seasonal transitions. 
@@ -98,6 +113,7 @@
         </div>
 
     </section>
+
     <!--Footer-->
     <footer>
         <div class="container">
@@ -110,13 +126,14 @@
                 </div>
 
                 <div class="footer-columns">
+
                     <div class="footer-column">
                         <h3>Services</h3>
                         <ul>
                             <li><a href="services.html#gardendesign">Garden Design</a></li>
                             <li><a href="services.html#lawninstallationandmaintenance">Lawn Installation & Maintenance</a></li>
                             <li><a href="services.html#eco-irrigationsystems">Eco-Irrigation Systems</a></li>
-                            <li><a href="services.html#seasonalclean-up">Seasonal Clean-up</a></li>
+                            <li><a href="services.html#seasonalcleanup">Seasonal Clean-up</a></li>
                         </ul>
                     </div>
 
@@ -139,6 +156,6 @@
             </div>
         </div>
     </footer>
-</body>
 
+</body>
 </html>

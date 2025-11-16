@@ -18,21 +18,25 @@
         <!--Head-->
         <header>
             <div class="header-content">
-                <a href="about.html" class="logolink">
+                <a href="index.html" class="logolink">
                     <img src="logo.png" alt="Bright Sprout Logo with Sprout" id="logoimg"/>
                 </a>
+
                 <!--Hamburger-->
-                 <input 
-  type="checkbox" 
-  id="menu-toggle"
-  class="menu-toggle"
-  aria-label="Menu"
-  aria-controls="main-navigation"
-  aria-expanded="false"
+                <input 
+    type="checkbox"
+    id="menu-toggle"
+    class="menu-toggle"
+    aria-label="Toggle navigation menu"
+    aria-controls="main-navigation"
+    role="switch"
+    aria-checked="false"
 />
+
                 <label for="menu-toggle" class="hamburger" aria-label="Hamburger Menu for Mobile"></label>
+
                 <!--Nav Bar-->
-                <nav class="navbar">
+                <nav class="navbar" aria-label="Main Navigation">
                     <ul class="nav--list">
                         <li class="item"><a href="index.html">Home</a></li>
                         <li class="item"><a href="contact.html">Contact Us</a></li>
@@ -116,6 +120,7 @@
                 </div>
             </div>
         </section>
+
         <!--Footer-->
         <footer>
             <div class="container">
@@ -131,11 +136,7 @@
                             <h3>Services</h3>
                             <ul>
                                 <li><a href="services.html#gardendesign">Garden Design</a></li>
-                                <li>
-                                    <a href="services.html#lawninstallationandmaintenance"
-                                        >Lawn Installation & Maintenance</a
-                                    >
-                                </li>
+                                <li><a href="services.html#lawninstallationandmaintenance">Lawn Installation & Maintenance</a></li>
                                 <li><a href="services.html#eco-irrigationsystems">Eco-Irrigation Systems</a></li>
                                 <li><a href="services.html#seasonalclean-up">Seasonal Clean-up</a></li>
                             </ul>

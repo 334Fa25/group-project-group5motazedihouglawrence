@@ -16,21 +16,25 @@
         <!--Head-->
         <header>
             <div class="header-content">
-                <a href="contact.html" class="logolink">
+                <a href="index.html" class="logolink">
                     <img src="logo.png" alt="Bright Sprout Logo with Sprout" id="logoimg"/>
                 </a>
+
                 <!--Hamburger-->
-                 <input 
-  type="checkbox" 
-  id="menu-toggle"
-  class="menu-toggle"
-  aria-label="Menu"
-  aria-controls="main-navigation"
-  aria-expanded="false"
+               <input 
+    type="checkbox"
+    id="menu-toggle"
+    class="menu-toggle"
+    aria-label="Toggle navigation menu"
+    aria-controls="main-navigation"
+    role="switch"
+    aria-checked="false"
 />
+
                 <label for="menu-toggle" class="hamburger" aria-label="Hamburger Menu for Mobile"></label>
+
                 <!--Nav Bar-->
-                <nav class="navbar">
+                <nav id="main-navigation" class="navbar">
                     <ul class="nav--list">
                         <li class="item"><a href="index.html">Home</a></li>
                         <li class="item"><a href="contact.html">Contact Us</a></li>
@@ -48,11 +52,12 @@
         <div class="head">
             <h1>Contact Us</h1>
         </div>
+
         <section id="contactHeader" class="intro-ourservices">
             <div class="container">
                 <h2>
-                    We'd love to hear from you! Whether you're interested in a free quote, have questions about our
-                    services, or want to discuss a custom landscaping project, our team is here to help.
+                    We'd love to hear from you! Whether you're interested in a free quote, have questions 
+                    about our services, or want to discuss a custom landscaping project, our team is here to help.
                 </h2>
             </div>
         </section>
@@ -102,18 +107,18 @@
                                 placeholder="e.g. 12345 or 12345-6789" />
                         </div>
 
+                        <!-- FIXED PHONE SECTION -->
                         <div class="formRow">
                             <label for="phone">Phone Number</label>
-                            <label for="phone">Phone Number</label>
-                                <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" aria-describedby="phoneHelp" />
-                                <small id="phoneHelp">Enter 10 digits, numbers only, or use format (555) 555-5555.</small>
-
-                            <input
-                                
-                                name="phone"
-                                type="tel"
-                                placeholder="(555) 555-5555"
-                                pattern="[0-9]{10}" />
+                            <input 
+                                id="phone" 
+                                name="phone" 
+                                type="tel" 
+                                placeholder="(555) 555-5555" 
+                                aria-describedby="phoneHelp"
+                                pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$"
+                            />
+                            <small id="phoneHelp">Enter (555) 555-5555 or 10 digits.</small>
                         </div>
 
                         <div class="formRow">
@@ -129,22 +134,11 @@
                         <div class="formRow">
                             <label>Services (Select all that apply)</label>
                             <div class="checkbox-group">
-                                <label
-                                    ><input type="checkbox" name="services[]" value="lawn_mowing" /> Lawn Mowing</label
-                                ><br />
-                                <label
-                                    ><input type="checkbox" name="services[]" value="landscaping" /> Landscaping</label
-                                ><br />
-                                <label
-                                    ><input type="checkbox" name="services[]" value="tree_trimming" /> Tree
-                                    Trimming</label
-                                ><br />
-                                <label><input type="checkbox" name="services[]" value="mulching" /> Mulching</label
-                                ><br />
-                                <label
-                                    ><input type="checkbox" name="services[]" value="seasonal_cleanup" /> Seasonal
-                                    Clean-Up</label
-                                >
+                                <label><input type="checkbox" name="services[]" value="lawn_mowing" /> Lawn Mowing</label><br />
+                                <label><input type="checkbox" name="services[]" value="landscaping" /> Landscaping</label><br />
+                                <label><input type="checkbox" name="services[]" value="tree_trimming" /> Tree Trimming</label><br />
+                                <label><input type="checkbox" name="services[]" value="mulching" /> Mulching</label><br />
+                                <label><input type="checkbox" name="services[]" value="seasonal_cleanup" /> Seasonal Clean-Up</label>
                             </div>
                         </div>
 
@@ -160,14 +154,16 @@
                         <div class="formRow">
                             <p class="privacy-policy">
                                 <strong>Privacy Policy:</strong><br />
-                                By providing your phone number, you agree to receive text messages (SMS) from BrightSprout Landscaping. You can unsubscribe at any time by replying STOP. Message and data rates may
-                                apply. Message frequency varies. See our Privacy Policy for more details.
+                                By providing your phone number, you agree to receive text messages (SMS) from BrightSprout Landscaping.
+                                You can unsubscribe at any time by replying STOP. Message and data rates may apply.
+                                Message frequency varies. See our Privacy Policy for more details.
                             </p>
                         </div>
 
                         <div id="buttons">
                             <input type="submit" value="Submit" />
                         </div>
+
                     </fieldset>
                 </form>
             </div>
@@ -188,11 +184,7 @@
                             <h3>Services</h3>
                             <ul>
                                 <li><a href="services.html#gardendesign">Garden Design</a></li>
-                                <li>
-                                    <a href="services.html#lawninstallationandmaintenance"
-                                        >Lawn Installation & Maintenance</a
-                                    >
-                                </li>
+                                <li><a href="services.html#lawninstallationandmaintenance">Lawn Installation & Maintenance</a></li>
                                 <li><a href="services.html#eco-irrigationsystems">Eco-Irrigation Systems</a></li>
                                 <li><a href="services.html#seasonalclean-up">Seasonal Clean-up</a></li>
                             </ul>

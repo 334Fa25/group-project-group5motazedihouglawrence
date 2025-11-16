@@ -674,9 +674,10 @@ footer .footer-column a:hover {
     
     /* side wide accessibility styles --- */
 :focus {
-  outline: 3px solid #00916e;
-  outline-offset: 2px;
+  outline: 3px solid #004aad;
+  outline-offset: 3px;
 }
+
 
 a:focus,
 button:focus,
