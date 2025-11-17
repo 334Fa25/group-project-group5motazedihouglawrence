@@ -34,7 +34,7 @@ html {
 /*------ Type ------*/
 h1 {
     font-family: "Gelasio", serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fffaf5;
     margin-bottom: 15px;
     text-align: center;
@@ -42,7 +42,7 @@ h1 {
 
 h2 {
     margin-bottom: 20px;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #081c35;
     font-family: "Gelasio", serif;
     text-align: center;
