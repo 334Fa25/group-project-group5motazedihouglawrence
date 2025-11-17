@@ -1,257 +1,300 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="BrightSprout Landscaping provides eco-friendly and well maintained lawn and garden design, maintenance, and irrigation systems in Maryville, MO" />
+        <title>Bright Sprout Landscaping | Home</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="BrightSprout Landscaping provides eco-friendly and well maintained lawn and garden design, maintenance, and irrigation systems in Maryville, MO" />
-    <title>Bright Sprout Landscaping | Home </title>
+        <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Gantari&display=swap" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Gantari&display=swap" rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
 
-    <link href="styles.css" rel="stylesheet" />
-</head>
+    <body>
+        <main>
+            <!--Head-->
+            <header>
+                <div class="header-content">
+                    <a href="index.html" class="logolink">
+                        <img src="logo.png" alt="Bright Sprout Logo with Sprout" id="logoimg" />
+                    </a>
 
-<body>
-<main>
-    <!--Head-->
-    <header>
-        <div class="header-content">
-            <a href="index.html" class="logolink">
-                <img src="logo.png" alt="Bright Sprout Logo with Sprout" id="logoimg"/>
-            </a>
+                    <!--Hamburger with accessibility-->
+                    <input
+                        type="checkbox"
+                        id="menu-toggle"
+                        class="menu-toggle"
+                        aria-label="Toggle navigation menu"
+                        aria-controls="main-navigation"
+                        role="switch"
+                        aria-checked="false" />
 
-            <!--Hamburger with accessibility-->
-            <input 
-    type="checkbox"
-    id="menu-toggle"
-    class="menu-toggle"
-    aria-label="Toggle navigation menu"
-    aria-controls="main-navigation"
-    role="switch"
-    aria-checked="false"
-/>
+                    <label for="menu-toggle" class="hamburger" aria-label="Hamburger Menu for Mobile"></label>
 
-            <label for="menu-toggle" class="hamburger" aria-label="Hamburger Menu for Mobile"></label>
-
-            <!--Nav Bar-->
-            <nav class="navbar" aria-label="Main Navigation" id="main-navigation">
-                <ul class="nav--list">
-                    <li class="item"><a href="index.html">Home</a></li>
-                    <li class="item"><a href="contact.html">Contact Us</a></li>
-                    <li class="item"><a href="about.html">About Us</a></li>
-                    <li class="item"><a href="services.html">Services</a></li>
-                    <li class="item"><a href="pricing.html">Pricing</a></li>
-                    <li class="item"><a href="gallery.html">Gallery</a></li>
-                    <li class="item"><a href="contact.html">Get a Free Quote!</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!--Introduction-->
-    <section class="home" aria-label="Main Page">
-        <div class="home-wrapper">
-            <img src="images/reddoorhouseafter.png" alt="reddoorhouse with Flowers and Landscaping" class="home-image" />
-
-            <div class="blue-box">
-                <h1>Welcome to BrightSprout Landscaping</h1>
-                <p>At Bright Sprout, we nurse your part of the earth.</p>
-                <a href="contact.html" class="quote-button">Get a Free Quote</a>
-            </div>
-        </div>
-    </section>
-
-    <!--Who Are We?-->
-    <section class="whoarewe" aria-label="Who Are We?">
-        <div class="intro-whoarewe">
-            <h2>Who are we?</h2>
-            <p>At Bright Sprout, we shape your land into a part of your home.</p>
-            <a href="about.html" class="meetourteam-button">Meet The Team!</a>
-        </div>
-    </section>
-
-    <!--Introduction-->
-    <section class="intro-whychooseus" aria-label="Why Choose Us?">
-        <div class="whychooseus-container">
-            <h2>Why Choose Us?</h2>
-            <div class="whychooseus-body">
-                <h3>Local Expertise</h3>
-                <p>Locally-focused designs that suit Missouri’s climate and soil.</p>
-            </div>
-            <div class="whychooseus-body">
-                <h3>Passionate Team</h3>
-                <p>Expert care from a team passionate about plants, beauty, and sustainability.</p>
-            </div>
-            <div class="whychooseus-body">
-                <h3>Innovative & Green</h3>
-                <p>Innovative solutions that balance aesthetics with environmental responsibility.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="intro-ourservices" aria-label="Our Services">
-        <h2>Our Services</h2>
-        <div class="service-row">
-
-            <div class="service-item">
-                <div class="service-icon">
-                    <img src="images/iconpng02.png" alt="Icon of two hands holding up a tree" class="icon-png" />
+                    <!--Nav Bar-->
+                    <nav class="navbar" aria-label="Main Navigation" id="main-navigation">
+                        <ul class="nav--list">
+                            <li class="item"><a href="index.html">Home</a></li>
+                            <li class="item"><a href="contact.html">Contact Us</a></li>
+                            <li class="item"><a href="about.html">About Us</a></li>
+                            <li class="item"><a href="services.html">Services</a></li>
+                            <li class="item"><a href="pricing.html">Pricing</a></li>
+                            <li class="item"><a href="gallery.html">Gallery</a></li>
+                            <li class="item"><a href="contact.html">Get a Free Quote!</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <h3>Garden Design</h3>
-            </div>
+            </header>
 
-            <div class="service-item">
-                <div class="service-icon">
-                    <img src="images/iconpng03.png" alt="Seasonal Clean-Up Icon" class="icon-png" />
+            <!--Introduction-->
+            <section class="home" aria-label="Main Page">
+                <div class="home-wrapper">
+                    <img
+                        src="images/reddoorhouseafter.png"
+                        alt="reddoorhouse with Flowers and Landscaping"
+                        class="home-image" />
+
+                    <div class="blue-box">
+                        <h1>Welcome to BrightSprout Landscaping</h1>
+                        <p>At Bright Sprout, we nurse your part of the earth.</p>
+                        <a href="contact.html" class="quote-button">Get a Free Quote</a>
+                    </div>
                 </div>
-                <h3>Seasonal Clean-Up</h3>
-            </div>
+            </section>
 
-            <div class="service-item">
-                <div class="service-icon">
-                    <img src="images/iconpng04.png" alt="Icon of Lawn Installation & Maintenance" class="icon-png" />
+            <!--Who Are We?-->
+            <section class="whoarewe" aria-label="Who Are We?">
+                <div class="intro-whoarewe">
+                    <h2>Who are we?</h2>
+                    <p>At Bright Sprout, we shape your land into a part of your home.</p>
+                    <a href="about.html" class="meetourteam-button">Meet The Team!</a>
                 </div>
-                <h3>Lawn Installation & Maintenance</h3>
-            </div>
+            </section>
 
-            <div class="service-item">
-                <div class="service-icon">
-                    <img src="images/iconpng01.png" alt="Icon of Eco-Irrigation Systems" class="icon-png" />
+            <!--Introduction-->
+            <section class="intro-whychooseus" aria-label="Why Choose Us?">
+                <div class="whychooseus-container">
+                    <h2>Why Choose Us?</h2>
+                    <div class="whychooseus-body">
+                        <h3>Local Expertise</h3>
+                        <p>Locally-focused designs that suit Missouri’s climate and soil.</p>
+                    </div>
+                    <div class="whychooseus-body">
+                        <h3>Passionate Team</h3>
+                        <p>Expert care from a team passionate about plants, beauty, and sustainability.</p>
+                    </div>
+                    <div class="whychooseus-body">
+                        <h3>Innovative & Green</h3>
+                        <p>Innovative solutions that balance aesthetics with environmental responsibility.</p>
+                    </div>
                 </div>
-                <h3>Eco-Irrigation Systems</h3>
-            </div>
+            </section>
 
-        </div>
-        <a href="services.html" class="quote-button">View Our Services</a>
-    </section>
-
-    <!--Reviews-->
-    <section class="intro-reviews" aria-label="Reviews">
-        <h2>Hear from our valuable customers!</h2>
-
-        <div class="quotations">
-            <p>"BrightSprout gave our front yard a whole new look..." – Laura P.</p>
-        </div>
-
-        <div class="quotations">
-            <p>"Carlos set up a drip irrigation system..." – Derek & Monique H.</p>
-        </div>
-
-        <div class="quotations">
-            <p>"We had BrightSprout redo our backyard lawn..." – Evelyn R.</p>
-        </div>
-    </section>
-
-    <!--Articles-->
-    <section class="articles-wrap" aria-label="Blogs and Tips">
-        <div class="articles-container">
-            <div class="blogs-tips">
-                <h2>Blogs & Tips</h2>
-
-                <div class="articles">
-                    <div class="article-card">
-                        <img src="https://images.squarespace-cdn.com/content/v1/57451ae2c2ea516211203f6a/1618232699563-F34C16ZHHEKAAOAJE2JH/1DD71941-5B51-4F48-9CB6-E84616F0E4BB.jpg?format=2500w" alt="Garden landscaping tip" class="article-img" width="300" height="200" />
-
-                        <div class="article-content">
-                            <a href="https://www.caseyjoylister.com/blog/10-tips-for-landscaping-your-garden" target="_blank" rel="noopener noreferrer" class="title-link">
-                                <h3>10 Tips for Landscaping Your Garden</h3>
-                            </a>
-                            <p>Learn how to make your garden beautiful and sustainable.</p>
-
-                            <p class="articles_media">
-                                Source:
-                                <a href="https://www.caseyjoylister.com/blog/10-tips-for-landscaping-your-garden" target="_blank" rel="noopener noreferrer" class="source-link">
-                                    Casey Joy Lister – Learn to Garden
-                                </a>
-                            </p>
+            <section class="intro-ourservices" aria-label="Our Services">
+                <h2>Our Services</h2>
+                <div class="service-row">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img
+                                src="images/iconpng02.png"
+                                alt="Icon of two hands holding up a tree"
+                                class="icon-png" />
                         </div>
+                        <h3>Garden Design</h3>
                     </div>
 
-                    <div class="article-card">
-                        <img src="https://dnr.mo.gov/sites/dnr/files/media/image/2024/12/mozingo-creek-watershed-map.JPG" alt="Mozingo Lake Watershed" class="article-img" width="300" height="200" />
-
-                        <div class="article-content">
-                            <a href="https://dnr.mo.gov/water/hows-water" target="_blank" rel="noopener noreferrer" class="title-link">
-                                <h3>Mozingo Lake Watershed Current Summary</h3>
-                            </a>
-                            <p>Discover how Missouri protects local ecosystems.</p>
-                            <p class="articles_media">
-                                Source:
-                                <a href="https://dnr.mo.gov/watershed-protection" target="_blank" rel="noopener noreferrer" class="source-link">
-                                    Missouri Department of Natural Resources
-                                </a>
-                            </p>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="images/iconpng03.png" alt="Seasonal Clean-Up Icon" class="icon-png" />
                         </div>
+                        <h3>Seasonal Clean-Up</h3>
                     </div>
 
-                    <div class="article-card">
-                        <img src="https://avenuerealtygroup.com/wp-content/uploads/2022/08/Preparing-for-End-of-Summer-Home-Maintenance.jpg" alt="End of Summer Home Maintenance" class="article-img" width="300" height="200" />
-
-                        <div class="article-content">
-                            <a href="https://avenuerealtygroup.com/article/preparing-for-end-of-summer-home-maintenance-10-tips-for-a-cozy-transition-into-fall/" target="_blank" rel="noopener noreferrer" class="title-link">
-                                <h3>Preparing for End of Summer Home Maintenance</h3>
-                            </a>
-                            <p>10 tips to transition your home for the fall season.</p>
-                            <p class="articles_media">
-                                Source:
-                                <a href="https://avenuerealtygroup.com/article/preparing-for-end-of-summer-home-maintenance-10-tips-for-a-cozy-transition-into-fall/" target="_blank" rel="noopener noreferrer" class="source-link">
-                                    Avenue Realty
-                                </a>
-                            </p>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img
+                                src="images/iconpng04.png"
+                                alt="Icon of Lawn Installation & Maintenance"
+                                class="icon-png" />
                         </div>
+                        <h3>Lawn Installation & Maintenance</h3>
                     </div>
 
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="images/iconpng01.png" alt="Icon of Eco-Irrigation Systems" class="icon-png" />
+                        </div>
+                        <h3>Eco-Irrigation Systems</h3>
+                    </div>
+                </div>
+                <a href="services.html" class="quote-button">View Our Services</a>
+            </section>
+
+            <!--Reviews-->
+            <section class="intro-reviews" aria-label="Reviews">
+                <h2>Hear from our valuable customers!</h2>
+
+                <div class="quotations">
+                    <p>"BrightSprout gave our front yard a whole new look..." – Laura P.</p>
                 </div>
 
-            </div>
-        </div>
-    </section>
-</main>
-
-<!-- Footer -->
-<footer>
-    <section class="container" aria-label="Footer with Services, Service Area, and Contact">
-        <div class="footer-content">
-
-            <div class="footer-logo">
-                <a href="index.html">
-                    <img src="logo.png" alt="Bright Sprout Logo" />
-                </a>
-            </div>
-
-            <div class="footer-columns">
-
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services.html#gardendesign">Garden Design</a></li>
-                        <li><a href="services.html#lawninstallationandmaintenance">Lawn Installation & Maintenance</a></li>
-                        <li><a href="services.html#eco-irrigationsystems">Eco-Irrigation Systems</a></li>
-                        <li><a href="services.html#seasonalclean-up">Seasonal Clean-up</a></li>
-                    </ul>
+                <div class="quotations">
+                    <p>"Carlos set up a drip irrigation system..." – Derek & Monique H.</p>
                 </div>
 
-                <div class="footer-column">
-                    <h3>Service Area</h3>
-                    <ul>
-                        <li><span>Maryville, MO.</span></li>
-                    </ul>
+                <div class="quotations">
+                    <p>"We had BrightSprout redo our backyard lawn..." – Evelyn R.</p>
                 </div>
+            </section>
 
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><span>Phone: (555) 123-LAND</span></li>
-                        <li><span>Email: info@brightsprout.com</span></li>
-                    </ul>
+            <!--Articles-->
+            <section class="articles-wrap" aria-label="Blogs and Tips">
+                <div class="articles-container">
+                    <div class="blogs-tips">
+                        <h2>Blogs & Tips</h2>
+
+                        <div class="articles">
+                            <div class="article-card">
+                                <img
+                                    src="https://images.squarespace-cdn.com/content/v1/57451ae2c2ea516211203f6a/1618232699563-F34C16ZHHEKAAOAJE2JH/1DD71941-5B51-4F48-9CB6-E84616F0E4BB.jpg?format=2500w"
+                                    alt="Garden landscaping tip"
+                                    class="article-img"
+                                    width="300"
+                                    height="200" />
+
+                                <div class="article-content">
+                                    <a
+                                        href="https://www.caseyjoylister.com/blog/10-tips-for-landscaping-your-garden"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="title-link">
+                                        <h3>10 Tips for Landscaping Your Garden</h3>
+                                    </a>
+                                    <p>Learn how to make your garden beautiful and sustainable.</p>
+
+                                    <p class="articles_media">
+                                        Source:
+                                        <a
+                                            href="https://www.caseyjoylister.com/blog/10-tips-for-landscaping-your-garden"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="source-link">
+                                            Casey Joy Lister – Learn to Garden
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="article-card">
+                                <img
+                                    src="https://dnr.mo.gov/sites/dnr/files/media/image/2024/12/mozingo-creek-watershed-map.JPG"
+                                    alt="Mozingo Lake Watershed"
+                                    class="article-img"
+                                    width="300"
+                                    height="200" />
+
+                                <div class="article-content">
+                                    <a
+                                        href="https://dnr.mo.gov/water/hows-water"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="title-link">
+                                        <h3>Mozingo Lake Watershed Current Summary</h3>
+                                    </a>
+                                    <p>Discover how Missouri protects local ecosystems.</p>
+                                    <p class="articles_media">
+                                        Source:
+                                        <a
+                                            href="https://dnr.mo.gov/watershed-protection"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="source-link">
+                                            Missouri Department of Natural Resources
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="article-card">
+                                <img
+                                    src="https://avenuerealtygroup.com/wp-content/uploads/2022/08/Preparing-for-End-of-Summer-Home-Maintenance.jpg"
+                                    alt="End of Summer Home Maintenance"
+                                    class="article-img"
+                                    width="300"
+                                    height="200" />
+
+                                <div class="article-content">
+                                    <a
+                                        href="https://avenuerealtygroup.com/article/preparing-for-end-of-summer-home-maintenance-10-tips-for-a-cozy-transition-into-fall/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="title-link">
+                                        <h3>Preparing for End of Summer Home Maintenance</h3>
+                                    </a>
+                                    <p>10 tips to transition your home for the fall season.</p>
+                                    <p class="articles_media">
+                                        Source:
+                                        <a
+                                            href="https://avenuerealtygroup.com/article/preparing-for-end-of-summer-home-maintenance-10-tips-for-a-cozy-transition-into-fall/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="source-link">
+                                            Avenue Realty
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+        </main>
 
-            </div>
+        <!-- Footer -->
+        <footer>
+            <section class="container" aria-label="Footer with Services, Service Area, and Contact">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="logo.png" alt="Bright Sprout Logo" />
+                        </a>
+                    </div>
 
-        </div>
-    </section>
-</footer>
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="services.html#gardendesign">Garden Design</a></li>
+                                <li>
+                                    <a href="services.html#lawninstallationandmaintenance"
+                                        >Lawn Installation & Maintenance</a
+                                    >
+                                </li>
+                                <li><a href="services.html#eco-irrigationsystems">Eco-Irrigation Systems</a></li>
+                                <li><a href="services.html#seasonalclean-up">Seasonal Clean-up</a></li>
+                            </ul>
+                        </div>
 
-</body>
+                        <div class="footer-column">
+                            <h3>Service Area</h3>
+                            <ul>
+                                <li><span>Maryville, MO.</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><span>Phone: (555) 123-LAND</span></li>
+                                <li><span>Email: info@brightsprout.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
 </html>
