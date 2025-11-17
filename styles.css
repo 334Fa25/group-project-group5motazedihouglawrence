@@ -675,6 +675,10 @@ footer .footer-column a:hover {
         font-size: 0.9rem; /* ~14px */
     }
 
+    .service-body img{
+        width: 250;
+        height: 125;
+    }
     /* Show Hamburger */
     .hamburger {
         display: block;
