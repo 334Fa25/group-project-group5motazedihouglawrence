@@ -332,9 +332,23 @@ legend {
 /*------Services------*/
 /*--- Service Images ---*/
 
+.services-container {
+    background-color: #fffaf5;
+    border: 20px solid #daedbd;
+    margin: 70px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
 .service-body {
     text-align: center;
-    margin: 30px;
+    margin: 50px;
+    padding: auto;
+}
+
+.service-body p {
+    margin: 30px 100px;
 }
 
 .service-body img {
@@ -840,6 +854,9 @@ footer .footer-column a:hover {
         flex: 1;
     }
 
+    .service-body p {
+    margin: 30px 200px;
+    }
     /* side wide accessibility styles --- */
     :focus {
         outline: 3px solid #004aad;
