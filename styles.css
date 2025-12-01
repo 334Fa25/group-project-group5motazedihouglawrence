@@ -12,8 +12,7 @@ h1,
 h2,
 h3,
 p,
-ul,
-href {
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -329,7 +328,7 @@ legend {
     line-height: 1.4;
 }
 
-/*------Services------*/
+/*-----Services------*/
 /*--- Service Images ---*/
 
 .services-container {
@@ -650,8 +649,56 @@ footer .footer-column a:hover {
     line-height: 1.5;
 }
 
-/*------------------ Mobile (800px) -------------------------------*/
-@media (max-width: 800px) {
+/*----- Mobile (max-width: 768px) -------*/
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+
+    
+    .services-container {
+        margin: 20px 10px;   
+        padding: 10px;       
+        border-width: 10px;  
+    }
+
+    .service-body {
+        margin: 20px 0;      
+        padding: 0;
+    }
+
+    .service-body p {
+        margin: 15px 0;      
+        padding: 0 10px;     
+    }
+
+    .service-body img {
+        width: 100%;
+        max-width: 300px;   
+        height: auto;
+        margin: 10px auto;
+        padding: 15px;       
+        border-radius: 25px;
+    }
+
+    /* --- Team --- */
     .team-member {
         flex-direction: column;
         text-align: center;
@@ -669,31 +716,7 @@ footer .footer-column a:hover {
         margin: 0;
     }
 
-    html {
-        font-size: 15px;
-    }
-
-    h1 {
-        font-size: 1.75rem; /* ~26px */
-    }
-
-    h2 {
-        font-size: 1.25rem; /* ~20px */
-    }
-
-    h3 {
-        font-size: 1.1rem; /* ~17px */
-    }
-
-    p {
-        font-size: 0.9rem; /* ~14px */
-    }
-
-    .service-body img{
-        width: 250;
-        height: 125;
-    }
-    /* Show Hamburger */
+    /* --- Hamburger Navigation --- */
     .hamburger {
         display: block;
         order: 2;
@@ -703,7 +726,6 @@ footer .footer-column a:hover {
         order: 1;
     }
 
-    /* --------Hide nav----- */
     .navbar {
         order: 3;
         width: 100%;
@@ -723,15 +745,10 @@ footer .footer-column a:hover {
     .nav--list .item a {
         padding: 14px;
         text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
         font-size: 14px;
     }
 
-    .nav--list .item:last-child a {
-        border-bottom: none;
-    }
-
-    /*---------Hamburger Menu---------------*/
     .menu-toggle:checked ~ .navbar .nav--list {
         display: flex;
     }
@@ -744,7 +761,7 @@ footer .footer-column a:hover {
         content: "✕";
     }
 
-    /*Footer*/
+    /* Footer adjustments */
     .footer-logo {
         display: none;
     }
@@ -759,7 +776,8 @@ footer .footer-column a:hover {
     }
 }
 
-/*------------Tablet (768px to 1023px)-------*/
+
+/*---Tablet (768px to 1023px)---*/
 @media (min-width: 768px) and (max-width: 1023px) {
     html {
         font-size: 17px;
@@ -798,9 +816,10 @@ footer .footer-column a:hover {
     #logoimg {
         width: 140px;
     }
+    
 }
 
-/*--------------Desktop (1024px)---------------*/
+/*--Desktop (1024px)--*/
 @media (min-width: 1024px) {
     h1,
     h2,
