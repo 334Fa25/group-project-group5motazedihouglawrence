@@ -32,24 +32,33 @@ html {
 
 /*------ Type ------*/
 h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
+    font-weight: bold;
     line-height: 2;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
     line-height: 1.3;
     text-align: center;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 p {
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+a {
+  color: inherit; 
+  text-decoration: none;
 }
 
 /*------ Layout: Header + Navigation --------*/
@@ -125,6 +134,21 @@ header {
     background-color: #081c35;
 }
 
+.quote-button-nav {
+    background-color: #fffaf5;
+    color: #081c35;
+    font-family: "Gantari", sans-serif;
+    font-weight: bold;
+    font-size: .75rem;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+    align-content: center;
+    max-width: 100%;
+}
+
 /*-----Main-----*/
 .head {
     background-color: #081c35;
@@ -176,16 +200,16 @@ header {
     color: #081c35;
     font-family: "Gantari", sans-serif;
     font-weight: bold;
-    font-size: 1rem;
     padding: 10px 18px;
+    border: 4px solid #081c35;
     border-radius: 6px;
     cursor: pointer;
-    box-shadow: 2px 2px 10px #081c35;
     text-decoration: none;
-    margin: 20px;
-    width: fit-content;
-    align-content: center;
+    display: inline-block;
+    margin: 20px 0;
+    width: fit-content; 
     max-width: 100%;
+    text-align: left;
 }
 
 /* Who Are We */
@@ -206,9 +230,10 @@ header {
     padding: 10px 18px;
     border-radius: 6px;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 12px;
-    box-shadow: 5px 5px 5px #081c35;
+    display: block;  
+    margin: 12px auto 0; 
+    box-shadow: 2px 2px 2px #081c35;
+    width: fit-content; 
 }
 
 .intro-whychooseus {
@@ -238,8 +263,9 @@ header {
     border-radius: 8px;
 }
 
-.whychooseus-body h1 {
-    color: #081c35;
+.whychooseus-body h3 {
+    font-weight: bold;
+    color: #00916e;
 }
 
 /*------ Blogs & Tips -----*/
@@ -278,7 +304,6 @@ header {
     background: #ffffff;
     padding: 25px 30px;
     border-radius: 10px;
-    box-shadow: 2px 1px #081c35;
     margin: 20px auto 15px;
 }
 
@@ -304,7 +329,28 @@ legend {
     border-radius: 6px;
     font-family: "Gantari", sans-serif;
     font-size: 1.2rem;
-    resize: vertical;
+}
+
+.formRow input[type="text"],
+.formRow input[type="email"],
+.formRow input[type="tel"],
+.formRow input[type="number"],
+.formRow input[type="url"],
+.formRow input[type="date"],
+.formRow select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    border: 1px solid #081c35;
+}
+
+.formRow input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    transform: scale(1.3); 
+    margin-right: 8px;
+    cursor: pointer;
 }
 
 #buttons input[type="submit"] {
@@ -337,7 +383,6 @@ legend {
     padding: 0 20px;
 }
 
-/* --- Core Service Block Styling --- */
 .service-body {
     display: flex;
     flex-direction: column;
@@ -346,17 +391,18 @@ legend {
     margin-bottom: 40px;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 5 5px 5px #00916e;
     transition: box-shadow 0.3s ease;
 }
 
 .service-body img {
-    /* Ensures images are responsive within their container */
-    max-width: 180%;
+    max-width: 100%;
+    align-content: center;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-    aspect-ratio: 16 / 9; /* Consistent aspect ratio for images */
+    display: block;
+    margin: 0
 }
 
 .service-body h2 {
@@ -378,6 +424,12 @@ legend {
 .icon-png {
     width: 200%;
     height: auto;
+}
+
+.service-item {
+    flex: display;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .intro-ourservices {
@@ -458,6 +510,28 @@ legend {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quote-splurg {
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    max-width: 800px;
+}
+
+/* Center the button inside the container */
+.quote-splurg .quote-button {
+    display: inline-block;
+    margin: 20px auto 0;
+}
+
+.quote-button:hover {
+    background-color: #00916e;
 }
 
 /* Footer */
@@ -623,6 +697,7 @@ footer .footer-column a:hover {
 .team-name {
     color: #081c35;
     margin-bottom: 5px;
+    font-size: 1.75rem;
 }
 
 .team-title {
@@ -632,9 +707,7 @@ footer .footer-column a:hover {
 }
 
 .team-desc {
-    color: #444;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 1.15rem;
 }
 
 /*----- Mobile (max-width: 768px) -------*/
@@ -659,7 +732,10 @@ footer .footer-column a:hover {
         font-size: 0.95rem;
         line-height: 1.55;
     }
-
+    
+    .quote-button-nav {
+    display: none;
+    }
     
     .services-container {
         margin: 20px 10px;   
@@ -762,8 +838,28 @@ footer .footer-column a:hover {
     .gallery-grid img {
         max-width: 45%;
     }
-}
 
+    .formRow input[type="text"],
+    .formRow input[type="email"],
+    .formRow input[type="tel"],
+    .formRow input[type="number"],
+    .formRow input[type="url"],
+    .formRow input[type="date"],
+    .formRow select {
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 1rem;
+        border-radius: 6px;
+        border: 1px solid #081c35;
+    }
+
+    .formRow input[type="checkbox"] {
+        width: 22px;
+        height: 22px;
+        transform: scale(1.3);
+        margin-right: 8px;
+    }
+}
 
 /*---Tablet (768px to 1023px)---*/
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -799,6 +895,10 @@ footer .footer-column a:hover {
     .nav--list .item a {
         font-size: 14px;
         padding: 10px 16px;
+    }
+    
+    .quote-button-nav {
+        display: none;
     }
 
     #logoimg {
@@ -851,29 +951,17 @@ footer .footer-column a:hover {
 
     
     .whychooseus-container,
-    .service-row,
+    .service-item,
     .pricing-container {
         flex-direction: row;
     }
 
     .whychooseus-body,
-    .service-item,
+    .service-row,
     .pricing-section {
         flex: 1;
     }
 
-    .service-body p {
-    margin: 30px 200px;
-    }
-    
-    .service-body {
-    display: flex;
-    flex-direction: row; 
-    gap: 25px;
-    padding: 30px;
-    background-color: white;
-    border-radius: 12px;
-}
     /* side wide accessibility styles --- */
     :focus {
         outline: 3px solid #004aad;
